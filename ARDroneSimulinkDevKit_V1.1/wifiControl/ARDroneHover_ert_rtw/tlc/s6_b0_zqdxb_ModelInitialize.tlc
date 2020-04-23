@@ -1,0 +1,43 @@
+%implements s6_b0_zqdxb_ModelInitialize "C"
+
+%function ModelInitialize(block, system) Output
+%assign cfgTxt = ""
+%openfile cfgTxt
+%assign localVarDecl = ""
+%assign tlcStartFcnOfS6B13 = OpaqueTLCBlockFcn("Start", 6, 13, 0, 12)
+%assign tlcStartFcnOfS6B14 = OpaqueTLCBlockFcn("Start", 6, 14, 0, 12)
+%<SLibInsertAsyncTaskInitializeCode(system)>
+%<SLibWriteMachineInitialize()>
+%<SLibCGIRDumpSystemUserCode(6, "Start", "Header")>\
+%<SLibCGIRDumpSystemUserCode(6, "Start", "Body")>\
+%if !WHITE_SPACE(tlcStartFcnOfS6B13)
+/* Start for S-Function (sldrtpo): '<S7>/Packet Output' */
+%<SLibCG_DumpSSCode("/*@[92651*/",tlcStartFcnOfS6B13,"/*@]*/")>\
+%endif
+%if !WHITE_SPACE(tlcStartFcnOfS6B14)
+/* Start for S-Function (sldrtpo): '<S10>/Packet Output1' */
+%<SLibCG_DumpSSCode("/*@[92654*/",tlcStartFcnOfS6B14,"/*@]*/")>\
+%endif
+%<SLibCGIRDumpSystemUserCode(6, "Start", "Trailer")>\
+/* InitializeConditions for Integrator: '<S17>/Integrator' */
+/*@>62f70*/if (%<SLibCG_DumpSSCode("/*@[92656*/",(LibIsFirstInitCond()),"/*@]*/")>) {
+    /*@>8f004*/rtX./*@>957c0*/Integrator_CSTATE/*@>62f65*/[/*@>81e86*/0]/*@>62f68*/ = /*@>81e85*/0.0;
+    /*@>8f00a*/rtX./*@>957c3*/Integrator_CSTATE/*@>62f6b*/[/*@>81e88*/1]/*@>62f6e*/ = /*@>81e87*/0.0;
+}
+/*@>90010*/rtDW./*@>957c6*/Integrator_IWORK/*@>62f74*/ = /*@>81e89*/1;
+/* End of InitializeConditions for Integrator: '<S17>/Integrator' */
+
+/* SystemInitialize for MATLAB Function: '<S7>/Drone state request' */
+/*@>90016*/rtDW./*@>957c9*/SequenceNumber/*@>62f56*/ = /*@>81e83*/1.0;
+%<SLibInsertInitPeriodicCStatesFcn(system)>
+%closefile cfgTxt
+%<cfgTxt>
+%endfunction
+%function ModelInitializeFcnProtoType(block, system) Output
+%assign fcnProtoType = ""
+%openfile fcnProtoType
+static void ModelInitialize(\
+%assign comma = ""
+%closefile fcnProtoType
+%<SLibCG_SetFcnProtoType(0, 12, fcnProtoType)>
+%endfunction

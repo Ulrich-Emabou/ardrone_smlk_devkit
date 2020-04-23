@@ -1,0 +1,194 @@
+%implements s6_b0_zqdxb_TLCInterface "C"
+
+%function getOutputAddr_6_0_0_5_0_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "&/*@<92d58*//*@>92d52*/rtDW./*@>92d5d*/PacketInput_o1" + SLibCG_ArrayIndexer(ucv, lcv, sigIdx)
+%endfunction
+
+%function getOutput_6_0_0_5_0_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "/*@>92d6a*/rtDW./*@>92d76*/PacketInput_o1" + SLibCG_ArrayIndexer(ucv, lcv, sigIdx)
+%endfunction
+
+%function getOutputAddr_6_0_0_5_1_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+%<SLibCGIRAccessLocalVar(28, 0)> %% rtb_PacketInput_o2
+
+%return "&/*@<92d84*//*@>92d80*/rtb_PacketInput_o2"
+%endfunction
+
+%function getOutput_6_0_0_5_1_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+%<SLibCGIRAccessLocalVar(28, 0)> %% rtb_PacketInput_o2
+
+%return "/*@>92d91*/rtb_PacketInput_o2"
+%endfunction
+
+%function getDWorkAddr_6_0_0_5_0_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "&/*@<92da8*//*@>92da2*/rtDW./*@>92dad*/PacketInput_PWORK"
+%endfunction
+
+%function getDWork_6_0_0_5_0_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "/*@>92dba*/rtDW./*@>92dc6*/PacketInput_PWORK"
+%endfunction
+
+%function getInputAddr_6_13_0_5_0_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "&/*@<92deb*//*@>92de5*/rtDW./*@>92df0*/dataControl" + SLibCG_ArrayIndexer(ucv, lcv, sigIdx)
+%endfunction
+
+%function getInput_6_13_0_5_0_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "/*@>92dfd*/rtDW./*@>92e09*/dataControl" + SLibCG_ArrayIndexer(ucv, lcv, sigIdx)
+%endfunction
+
+%function getDWorkAddr_6_13_0_5_0_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "&/*@<92e1a*//*@>92e14*/rtDW./*@>92e1f*/PacketOutput_PWORK" + SLibCG_ArrayIndexer(ucv, lcv, sigIdx)
+%endfunction
+
+%function getDWork_6_13_0_5_0_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "/*@>92e2c*/rtDW./*@>92e38*/PacketOutput_PWORK" + SLibCG_ArrayIndexer(ucv, lcv, sigIdx)
+%endfunction
+
+%function getInputAddr_6_14_0_6_0_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "&/*@<92e5d*//*@>92e57*/rtDW./*@>92e62*/RateTransition" + SLibCG_ArrayIndexer(ucv, lcv, sigIdx)
+%endfunction
+
+%function getInput_6_14_0_6_0_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "/*@>92e6f*/rtDW./*@>92e7b*/RateTransition" + SLibCG_ArrayIndexer(ucv, lcv, sigIdx)
+%endfunction
+
+%function getDWorkAddr_6_14_0_6_0_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "&/*@<92e8c*//*@>92e86*/rtDW./*@>92e91*/PacketOutput1_PWORK" + SLibCG_ArrayIndexer(ucv, lcv, sigIdx)
+%endfunction
+
+%function getDWork_6_14_0_6_0_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "/*@>92e9e*/rtDW./*@>92eaa*/PacketOutput1_PWORK" + SLibCG_ArrayIndexer(ucv, lcv, sigIdx)
+%endfunction
+
+%function getInputAddr_6_13_0_7_0_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "&/*@<92ecf*//*@>92ec9*/rtDW./*@>92ed4*/dataControl" + SLibCG_ArrayIndexer(ucv, lcv, sigIdx)
+%endfunction
+
+%function getInput_6_13_0_7_0_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "/*@>92ee1*/rtDW./*@>92eed*/dataControl" + SLibCG_ArrayIndexer(ucv, lcv, sigIdx)
+%endfunction
+
+%function getDWorkAddr_6_13_0_7_0_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "&/*@<92efe*//*@>92ef8*/rtDW./*@>92f03*/PacketOutput_PWORK" + SLibCG_ArrayIndexer(ucv, lcv, sigIdx)
+%endfunction
+
+%function getDWork_6_13_0_7_0_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "/*@>92f10*/rtDW./*@>92f1c*/PacketOutput_PWORK" + SLibCG_ArrayIndexer(ucv, lcv, sigIdx)
+%endfunction
+
+%function getInputAddr_6_14_0_8_0_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "&/*@<92f41*//*@>92f3b*/rtDW./*@>92f46*/RateTransition" + SLibCG_ArrayIndexer(ucv, lcv, sigIdx)
+%endfunction
+
+%function getInput_6_14_0_8_0_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "/*@>92f53*/rtDW./*@>92f5f*/RateTransition" + SLibCG_ArrayIndexer(ucv, lcv, sigIdx)
+%endfunction
+
+%function getDWorkAddr_6_14_0_8_0_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "&/*@<92f70*//*@>92f6a*/rtDW./*@>92f75*/PacketOutput1_PWORK" + SLibCG_ArrayIndexer(ucv, lcv, sigIdx)
+%endfunction
+
+%function getDWork_6_14_0_8_0_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "/*@>92f82*/rtDW./*@>92f8e*/PacketOutput1_PWORK" + SLibCG_ArrayIndexer(ucv, lcv, sigIdx)
+%endfunction
+
+%function getInputAddr_6_13_0_11_0_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "&/*@<92fb3*//*@>92fad*/rtDW./*@>92fb8*/dataControl" + SLibCG_ArrayIndexer(ucv, lcv, sigIdx)
+%endfunction
+
+%function getInput_6_13_0_11_0_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "/*@>92fc5*/rtDW./*@>92fd1*/dataControl" + SLibCG_ArrayIndexer(ucv, lcv, sigIdx)
+%endfunction
+
+%function getDWorkAddr_6_13_0_11_0_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "&/*@<92fe2*//*@>92fdc*/rtDW./*@>92fe7*/PacketOutput_PWORK" + SLibCG_ArrayIndexer(ucv, lcv, sigIdx)
+%endfunction
+
+%function getDWork_6_13_0_11_0_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "/*@>92ff4*/rtDW./*@>93000*/PacketOutput_PWORK" + SLibCG_ArrayIndexer(ucv, lcv, sigIdx)
+%endfunction
+
+%function getInputAddr_6_14_0_11_0_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "&/*@<93025*//*@>9301f*/rtDW./*@>9302a*/RateTransition" + SLibCG_ArrayIndexer(ucv, lcv, sigIdx)
+%endfunction
+
+%function getInput_6_14_0_11_0_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "/*@>93037*/rtDW./*@>93043*/RateTransition" + SLibCG_ArrayIndexer(ucv, lcv, sigIdx)
+%endfunction
+
+%function getDWorkAddr_6_14_0_11_0_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "&/*@<93054*//*@>9304e*/rtDW./*@>93059*/PacketOutput1_PWORK" + SLibCG_ArrayIndexer(ucv, lcv, sigIdx)
+%endfunction
+
+%function getDWork_6_14_0_11_0_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "/*@>93066*/rtDW./*@>93072*/PacketOutput1_PWORK" + SLibCG_ArrayIndexer(ucv, lcv, sigIdx)
+%endfunction
+
+%function getInputAddr_6_13_0_12_0_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "&/*@<93097*//*@>93091*/rtDW./*@>9309c*/dataControl" + SLibCG_ArrayIndexer(ucv, lcv, sigIdx)
+%endfunction
+
+%function getInput_6_13_0_12_0_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "/*@>930a9*/rtDW./*@>930b5*/dataControl" + SLibCG_ArrayIndexer(ucv, lcv, sigIdx)
+%endfunction
+
+%function getDWorkAddr_6_13_0_12_0_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "&/*@<930c6*//*@>930c0*/rtDW./*@>930cb*/PacketOutput_PWORK" + SLibCG_ArrayIndexer(ucv, lcv, sigIdx)
+%endfunction
+
+%function getDWork_6_13_0_12_0_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "/*@>930d8*/rtDW./*@>930e4*/PacketOutput_PWORK" + SLibCG_ArrayIndexer(ucv, lcv, sigIdx)
+%endfunction
+
+%function getInputAddr_6_14_0_12_0_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "&/*@<93109*//*@>93103*/rtDW./*@>9310e*/RateTransition" + SLibCG_ArrayIndexer(ucv, lcv, sigIdx)
+%endfunction
+
+%function getInput_6_14_0_12_0_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "/*@>9311b*/rtDW./*@>93127*/RateTransition" + SLibCG_ArrayIndexer(ucv, lcv, sigIdx)
+%endfunction
+
+%function getDWorkAddr_6_14_0_12_0_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "&/*@<93138*//*@>93132*/rtDW./*@>9313d*/PacketOutput1_PWORK" + SLibCG_ArrayIndexer(ucv, lcv, sigIdx)
+%endfunction
+
+%function getDWork_6_14_0_12_0_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "/*@>9314a*/rtDW./*@>93156*/PacketOutput1_PWORK" + SLibCG_ArrayIndexer(ucv, lcv, sigIdx)
+%endfunction
+

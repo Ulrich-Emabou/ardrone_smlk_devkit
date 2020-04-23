@@ -1,0 +1,60 @@
+%implements s6_b0_zqdxb_Update "C"
+
+%function UpdateForTID(block, system, tid) Output
+%if tid == 0
+%assign ::GlobalCurrentTID = 0
+%assign cfgTxt = ""
+%openfile cfgTxt
+%assign localVarDecl = ""
+%assign tlcUpdateFcnOfS6B13 = OpaqueTLCBlockFcn("Update", 6, 13, 0, 7)
+/* Update for Integrator: '<S17>/Integrator' */
+/*@>8ff9e*/rtDW./*@>95690*/Integrator_IWORK/*@>62e65*/ = /*@>81dd2*/0;
+if (%<(SLibCGIRIsSampleHit(1, 6))>) {
+    /* Update for UnitDelay: '<S1>/Unit Delay to avoid algebraic loop' */
+    /*@>8ffa4*/rtDW./*@>95693*/UnitDelaytoavoidalgebraicloop_DSTATE/*@>62e71*/ = /*@>8ffaa*/rtDW./*@>95696*/isFlying;
+%if !WHITE_SPACE(tlcUpdateFcnOfS6B13)
+    /* Update for S-Function (sldrtpo): '<S7>/Packet Output' */
+%<SLibCG_DumpSSCode("/*@[92622*/",tlcUpdateFcnOfS6B13,"/*@]*/")>\
+%endif
+}
+%closefile cfgTxt
+%<cfgTxt>
+%assign ::GlobalCurrentTID = []
+%endif
+%if tid == 2
+%assign ::GlobalCurrentTID = 2
+%assign cfgTxt = ""
+%openfile cfgTxt
+%assign localVarDecl = ""
+%assign tlcUpdateFcnOfS6B14 = OpaqueTLCBlockFcn("Update", 6, 14, 0, 8)
+%if !WHITE_SPACE(tlcUpdateFcnOfS6B14)
+/* Update for S-Function (sldrtpo): '<S10>/Packet Output1' */
+%<SLibCG_DumpSSCode("/*@[92627*/",tlcUpdateFcnOfS6B14,"/*@]*/")>\
+%endif
+%closefile cfgTxt
+%<cfgTxt>
+%assign ::GlobalCurrentTID = []
+%endif
+%endfunction
+%function UpdateFcnProtoTypeForTID(block, system, tid) Output
+%if tid == 0
+%assign ::GlobalCurrentTID = 0
+%assign fcnProtoType = ""
+%openfile fcnProtoType
+static void Update(\
+%assign comma = ""
+%closefile fcnProtoType
+%<SLibCG_SetFcnProtoType(0, 7, fcnProtoType)>
+%assign ::GlobalCurrentTID = []
+%endif
+%if tid == 2
+%assign ::GlobalCurrentTID = 2
+%assign fcnProtoType = ""
+%openfile fcnProtoType
+static void Update(\
+%assign comma = ""
+%closefile fcnProtoType
+%<SLibCG_SetFcnProtoType(0, 8, fcnProtoType)>
+%assign ::GlobalCurrentTID = []
+%endif
+%endfunction

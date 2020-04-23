@@ -1,0 +1,8 @@
+%implements s6_b0_zqdxb_PublicModuleTypes "C"
+
+%function PublicModuleTypes(block) Output
+
+
+/* Custom Type definition for MATLAB Function: '<S7>/Drone state request' */
+#include <stddef.h>
+%endfunction

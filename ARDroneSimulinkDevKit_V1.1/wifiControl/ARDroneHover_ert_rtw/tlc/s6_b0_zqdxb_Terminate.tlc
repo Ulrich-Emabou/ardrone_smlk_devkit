@@ -1,0 +1,27 @@
+%implements s6_b0_zqdxb_Terminate "C"
+
+%function Terminate(block, system) Output
+%assign cfgTxt = ""
+%openfile cfgTxt
+%assign localVarDecl = ""
+%assign tlcTerminateFcnOfS6B13 = OpaqueTLCBlockFcn("Terminate", 6, 13, 0, 11)
+%assign tlcTerminateFcnOfS6B14 = OpaqueTLCBlockFcn("Terminate", 6, 14, 0, 11)
+%if !WHITE_SPACE(tlcTerminateFcnOfS6B13)
+/* Terminate for S-Function (sldrtpo): '<S7>/Packet Output' */
+%<SLibCG_DumpSSCode("/*@[9263b*/",tlcTerminateFcnOfS6B13,"/*@]*/")>\
+%endif
+%if !WHITE_SPACE(tlcTerminateFcnOfS6B14)
+/* Terminate for S-Function (sldrtpo): '<S10>/Packet Output1' */
+%<SLibCG_DumpSSCode("/*@[9263e*/",tlcTerminateFcnOfS6B14,"/*@]*/")>\
+%endif
+%closefile cfgTxt
+%<cfgTxt>
+%endfunction
+%function TerminateFcnProtoType(block, system) Output
+%assign fcnProtoType = ""
+%openfile fcnProtoType
+static void Terminate(\
+%assign comma = ""
+%closefile fcnProtoType
+%<SLibCG_SetFcnProtoType(0, 11, fcnProtoType)>
+%endfunction
